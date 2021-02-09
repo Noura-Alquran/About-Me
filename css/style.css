@@ -2,7 +2,7 @@ header img {
     float:right;
     width: 200px;
     height: 200px;
-    margin-top: 120px;
+    margin-top: 180px;
 }
 body {
     background-color: rgb(228, 218, 163);
@@ -16,8 +16,24 @@ h1{
 table{
     border: 1px solid black;
     background-color: darkkhaki;
+    margin-left: 20px;
 }
 
 th, td{
     border: rgb(65, 56, 10) solid 1px;
+}
+ol {
+   
+    margin: 10px;
+    color: rgb(51, 59, 29);
+    background-color: rgb(223, 223, 159);
+}
+h3 {
+    border: 1px solid black;
+    background-color: snow;
+    
+}
+main p 
+{
+    margin-bottom: 150px;
 }
