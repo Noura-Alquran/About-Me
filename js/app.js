@@ -6,7 +6,7 @@ alert ('welcome '+userName);
 userID(); 
 alert('I\'m going to play a guessing game with you about me ');
 let score= 0;
-function yesNoQ ( knowMe , footBall ,knowUni ,knowColor ,know){
+function an(knowMe){
 //Q1
 knowMe= prompt('Do you think I worked for a company before?');
 knowMe= knowMe.toLowerCase();
@@ -25,6 +25,9 @@ else {
     //console.log("omg!");
 alert ('omg!');
 }
+}
+an();
+function a2(footBall){
 //Q2
 footBall= prompt('Do I watch football?');
 footBall= footBall.toLowerCase();
@@ -43,6 +46,9 @@ else {
     //console.log("omg!");
 alert ('omg!');
 }
+}
+a2();
+function a3(knowUni){
 //Q3
  knowUni= prompt('Did I graduate from JUST university?');
 knowUni= knowUni.toLowerCase();
@@ -61,6 +67,9 @@ else {
     //console.log("omg!");
 alert ('omg!');
 }
+}
+a3();
+function a4(knowColor){
 //Q4
  knowColor= prompt('Do I prefer the blue color?');
 knowColor= knowColor.toLowerCase();
@@ -79,6 +88,11 @@ else {
     //console.log("omg!");
 alert ('omg!');
 }
+
+}
+a4();
+
+function a5(know){
 //Q5
  know= prompt('Do you think I love my life?');
 know= know.toLowerCase();
@@ -97,8 +111,9 @@ else {
     //console.log("omg!");
 alert ('omg!');
 }
-} 
-yesNoQ();
+}
+a5();
+
 function guessNumber ( knowFavNum ){
 //Q6 
  knowFavNum= prompt('What is my favorite number?')
