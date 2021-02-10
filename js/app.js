@@ -1,18 +1,19 @@
 'use strict';
-let userName = prompt('What is your name?')
+function userID (userName){
+ userName = prompt('What is your name?')
 alert ('welcome '+userName);
+}
+userID(); 
 alert('I\'m going to play a guessing game with you about me ');
 let score= 0;
+function yesNoQ ( knowMe , footBall ,knowUni ,knowColor ,know){
 //Q1
-let knowMe= prompt('Do you think I worked for a company before?');
-
+knowMe= prompt('Do you think I worked for a company before?');
 knowMe= knowMe.toLowerCase();
-
 if (knowMe ==='yes' || knowMe ==='y')
 {
     //console.log("No ,I don\'t");
     alert ('No ,I don\'t');
-
 }
 else if (knowMe ==='no' || knowMe ==='n')
 {
@@ -25,15 +26,12 @@ else {
 alert ('omg!');
 }
 //Q2
-let footBall= prompt('Do I watch football?');
-
+footBall= prompt('Do I watch football?');
 footBall= footBall.toLowerCase();
-
 if (footBall ==='yes' || footBall ==='y')
 {
     //console.log("No ,I don\'t");
     alert ('No ,I don\'t');
-
 }
 else if (footBall ==='no' || footBall ==='n')
 {
@@ -46,16 +44,13 @@ else {
 alert ('omg!');
 }
 //Q3
-
-let knowUni= prompt('Did I graduate from JUST university?');
+ knowUni= prompt('Did I graduate from JUST university?');
 knowUni= knowUni.toLowerCase();
-
 if (knowUni ==='yes' || knowUni ==='y')
 {
     //console.log("yes that is true");
     alert ('yes that is true');
     score =score +1;
-
 }
 else if (knowUni ==='no' || knowUni ==='n')
 {
@@ -67,17 +62,13 @@ else {
 alert ('omg!');
 }
 //Q4
-
-let knowColor= prompt('Do I prefer the blue color?');
-
+ knowColor= prompt('Do I prefer the blue color?');
 knowColor= knowColor.toLowerCase();
-
 if (knowColor ==='yes' || knowColor==='y')
 {
     //console.log("yes that is true");
     alert ('yes that is true');
     score=score+1;
-
 }
 else if (knowColor ==='no' || knowColor ==='n')
 {
@@ -89,16 +80,13 @@ else {
 alert ('omg!');
 }
 //Q5
-let know= prompt('Do you think I love my life?');
-
+ know= prompt('Do you think I love my life?');
 know= know.toLowerCase();
-
 if (know ==='yes' || know ==='y')
 {
    //console.log("correct");
    alert ('correct'); 
    score=score+1;
-
 }
 else if (know ==='no' || know ==='n')
 {
@@ -109,15 +97,17 @@ else {
     //console.log("omg!");
 alert ('omg!');
 }
+} 
+yesNoQ();
+function guessNumber ( knowFavNum ){
 //Q6 
-let knowFavNum= prompt('What is my favorite number?')
+ knowFavNum= prompt('What is my favorite number?')
 knowFavNum=parseInt(knowFavNum);
 //console.log(knowFavNum)
 for ( let n=1 ; n<=4 ; n++)
 {
     if (knowFavNum=== 5){
         alert ('correct');
-
      break;}
      else if ( knowFavNum>5)
     { alert("too high");}
@@ -128,18 +118,18 @@ for ( let n=1 ; n<=4 ; n++)
 let attempt =4-n;
 knowFavNum= prompt('You have  ' + attempt +'attempts'+'\n What is my favorite number?');
 knowFavNum=parseInt(knowFavNum);
-
 }
 if (knowFavNum===5)
     {
         score=score+1;
     }
 alert ('My favorite number is 5');
-
+}
+guessNumber();
+function guessItemOnArray(arrOfNames){
 //Q7
-let arrOfNames =['mamoun ','manal ','rahmah ','eman ','jana ','mohmmad '];
+ arrOfNames =['mamoun ','manal ','rahmah ','eman ','jana ','mohmmad '];
 //console.log(arrOfNames);
- 
 let knowFamily;
 let m ;
 for( m=0;m <6;m++)
@@ -157,15 +147,14 @@ for( m=0;m <6;m++)
            break ;
         }
     }
-
     }
-    
+    alert ( 'My family members are : '+ arrOfNames );
+}
+guessItemOnArray();
  //   if (arrOfNames.indexOf(knowFamily) !==-1)
   //  {
   //     break;
-
   //  }
-    
 //else 
 // {
 //     let att = 5-m
@@ -180,9 +169,8 @@ for( m=0;m <6;m++)
       //  score =score+1;
 //
   //  }
-
-alert ( 'My family members are : '+ arrOfNames );
-
+function yourScore ()
+{
 alert ('Your score is '+ score +' out of 7')
     if (score>=5)
     {
@@ -191,7 +179,29 @@ alert ('Your score is '+ score +' out of 7')
     else {
         alert ('You don\'n know me well');
     }
-alert ('Welcome to you again '+ userName);
-    
-       
+}
+yourScore ();
+
+
+
+let grade;
+function totalGrade(score){
+
+    grade=(score*100)/7;
+
+    return grade;
+}
+
+totalGrade(score);
+
+
+alert('Your total grade is '+ '' + grade +'%');
+alert ('Welcome to you again ');
+
+
+
+
+
+
+
 
