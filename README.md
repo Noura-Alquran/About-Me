@@ -13,4 +13,9 @@
     3. I added score variable to store the correct answers then alert the user his score out of 7 .
     
 
+## Lab 04
+ * I'm  Sukayna Mohammad Ghnemat .I'm the driver in Noura's rep .I declared functions to organize her JS code and I added a function to calculate total grade of  answers that the user entered .
+(edited)
+
+
 
