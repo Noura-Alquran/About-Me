@@ -14,8 +14,8 @@
     
 
 ## Lab 04
- * I'm  Sukayna Mohammad Ghnemat .I'm the driver in Noura's rep .I declared functions to organize her JS code and I added a function to calculate total grade of  answers that the user entered .
-(edited)
+ * I'm  Sukayna Mohammad Ghnemat .I'm the driver in Noura's repo .I declared functions to organize her JS code and I added a function to calculate total grade of  answers that the user entered .
+
 
 
 
