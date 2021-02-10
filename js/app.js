@@ -48,7 +48,6 @@ alert ('omg!');
 //Q3
 
 let knowUni= prompt('Did I graduate from JUST university?');
-
 knowUni= knowUni.toLowerCase();
 
 if (knowUni ==='yes' || knowUni ==='y')
@@ -140,31 +139,48 @@ alert ('My favorite number is 5');
 //Q7
 let arrOfNames =['mamoun ','manal ','rahmah ','eman ','jana ','mohmmad '];
 //console.log(arrOfNames);
-let knowFamily=prompt('Guess the name of anyone of my family member?')
-knowFamily=knowFamily.toLowerCase();
-//console.log(knowFamily);
-for( let m=0;m <6;m++)
-{
-    if (arrOfNames.indexOf(knowFamily) !==-1)
+ 
+let knowFamily;
+let m ;
+for( m=0;m <6;m++)
+ {
+     knowFamily=prompt('Guess the name of anyone of my family member?')
+     knowFamily=knowFamily.toLowerCase();
+ //console.log(knowFamily);
+    for (let q =0 ; q < arrOfNames.length ; q++ )
     {
-       break;
+        if ( knowFamily===arrOfNames[q])
+        {
+           alert ('correct') 
+           m=9;
+           score =score+1;
+           break ;
+        }
+    }
 
     }
     
-else 
- {
-     let att = 5-m
-    knowFamily=prompt('You have '+ att + 'attempts'+' \n Guess the name of anyone of my family member?');
-    knowFamily=knowFamily.toLowerCase();
-    //console.log(knowFamily);  
-}
-}
-if (arrOfNames.indexOf(knowFamily) !==-1)
-    {
-        alert ('correct')
-        score =score+1;
+ //   if (arrOfNames.indexOf(knowFamily) !==-1)
+  //  {
+  //     break;
 
-    }
+  //  }
+    
+//else 
+// {
+//     let att = 5-m
+  //  knowFamily=prompt('You have '+ att + 'attempts'+' \n Guess the name of anyone of my family member?');
+  //  knowFamily=knowFamily.toLowerCase();
+    //console.log(knowFamily);  
+//}
+//}
+//if (arrOfNames.indexOf(knowFamily) !==-1)
+  //  {
+    //    alert ('correct')
+      //  score =score+1;
+//
+  //  }
+
 alert ( 'My family members are : '+ arrOfNames );
 
 alert ('Your score is '+ score +' out of 7')
